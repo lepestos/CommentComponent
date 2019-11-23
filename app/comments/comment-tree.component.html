@@ -2,6 +2,7 @@
   <label>{{comment.text}}</label>    
   <br>
   <button (click)="openCommentText(comment)">Anwser</button>
+  <button (click)="remove(comment)">Delete</button>
   <div *ngIf="comment.isOpen">
     <textarea [(ngModel)]="text" cols="80" rows="7"></textarea>
     <br>

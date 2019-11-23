@@ -50,8 +50,8 @@ export class CommentTree implements OnInit {
     comment.isOpen = !comment.isOpen;
   }
 
-  remove(comment:CommentNode){    
+  remove(comment:CommentNode){
     let index = this.comments.indexOf(comment);
-    this.comments = this.comments.splice(index,1);        
+    this.comments.splice(index,1);        
   }
 }
