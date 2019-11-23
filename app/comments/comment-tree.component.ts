@@ -3,6 +3,7 @@ export class CommentNode {
   text:string ='';
   anwsers:CommentNode[] = [];
   isOpen:false;
+  
   constructor(text:string){
     this.text = text;
   }
@@ -20,6 +21,7 @@ export class CommentNode {
     }
   }
 }
+
 @Component({
   selector: 'comment-tree',
   templateUrl: './comment-tree.component.html',
